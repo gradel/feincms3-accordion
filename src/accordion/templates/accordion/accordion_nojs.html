@@ -1,0 +1,17 @@
+{% load thumbnail %}
+{% load feincms3 %}
+
+<ul class="accordion">
+    {% for item in plugin.get_items %}
+    {% with regions=item.get_regions %}
+    <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>{{ item.heading }}</h2>
+        <div class="acc-item-content">
+            {% render_region regions 'accordion_item_content' %}
+        </div>
+    </li>
+    {% endwith %}
+    {% endfor %}
+</ul>

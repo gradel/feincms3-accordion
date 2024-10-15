@@ -1,0 +1,36 @@
+[project]
+name = "feincms3-accordion"
+description = "A toy/test accordion plugin for feincms3"
+readme = "README.md"
+authors = [
+    {name = "Gerald Hien", email = "gerald@hien-online.de"},
+]
+license = {file = "LICENSE"}
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+requires-python = ">= 3.10"
+dynamic = ["version"]
+dependencies = [
+    "feincms3",
+    "django-imagefield",
+]
+
+[project.urls]
+"Source code" = "https://github.com/gradel/feincms3-accordion"
+"Issue tracker" = "https://github.com/gradel/feincms3-accordion/issues"
+
+[tool.setuptools.dynamic]
+version.attr = "accordion.__version__"
+
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"

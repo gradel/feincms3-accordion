@@ -1,0 +1,3 @@
+recursive-include src/accordion/templates *
+recursive-include src/accordion/locale *
+recursive-include src/accordion/static *
