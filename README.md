@@ -46,7 +46,7 @@ Does this app make sense, is it save to use? I'm not sure, perhaps.
 
 Install the app from github with your favorite tool
 ```bash
-python -m pip install 'feincms3-accordion @ git+https://github.com/gerlad/feincms3-accordion.git'
+python -m pip install 'feincms3-accordion @ git+https://github.com/gradel/feincms3-accordion.git'
 ```
 or for a quick test just copy the `accordion` folder in your project.
 
