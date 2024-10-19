@@ -64,7 +64,12 @@ def accordion_parent(obj):
 
 @admin.register(Accordion)
 class AccordionAdmin(ContentEditor, admin.ModelAdmin):
-    list_filter = ('base_accordion_accordion__parent',)
+    list_filter = (
+        (
+            'base_accordion_accordion__parent',
+            admin.RelatedOnlyFieldListFilter
+        ),
+    )
     list_display = ('name', accordion_parent,)
     inlines = [
         AccordionItemLinkInline.create(
